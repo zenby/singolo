@@ -18,6 +18,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Lato', Courier, monospace;
 }
@@ -30,8 +34,14 @@ h2 {
 }
 
 section {
+  position: relative;
   padding: 60px 40px;
   color: #767e9e;
+}
+
+span.hidden-anchor[id] {
+  position: absolute;
+  top: -90px;
 }
 
 section:empty {
@@ -58,6 +68,7 @@ header {
   padding: 0 40px;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 .logo {
@@ -101,13 +112,13 @@ nav > a:target {
 
 /* services */
 
-#services article > p {
+.services-section article > p {
   font-family: 'Lato-Light';
   font-size: 18px;
   line-height: 30px;
 }
 
-#services article {
+.services-section article {
   margin-bottom: 50px;
 }
 
@@ -161,12 +172,12 @@ nav > a:target {
 
 /* portfolio */
 
-#portfolio {
+.portfolio-section {
   background: #2d303a;
   border-bottom: 5px solid #323746;
 }
 
-#portfolio p {
+.portfolio-section p {
   font-size: 18px;
   margin-bottom: 16px;
   font-family: 'Lato-Light';
@@ -182,9 +193,6 @@ nav > a:target {
   margin-right: 10px;
   padding: 3px;
   border: 1px solid currentColor;
-}
-
-.tag {
   cursor: pointer;
 }
 
