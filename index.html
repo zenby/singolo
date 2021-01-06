@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="assets/images/chromatic.png" type="image/x-icon" />
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com" /> -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css" />
   </head>
   <body>
     <header>
@@ -33,8 +34,10 @@
     </header>
     <section id="slider">
       <span id="home" class="hidden-anchor"></span>
-      <img class="arrow arrow-left" src="assets/images/arrow-left.svg" alt="arrow-left" />
-      <img class="arrow arrow-right" src="assets/images/arrow-right.svg" alt="arrow-right" />
+      <div class="slider-controls">
+        <img class="arrow arrow-left" src="assets/images/arrow-left.svg" alt="arrow-left" />
+        <img class="arrow arrow-right" src="assets/images/arrow-right.svg" alt="arrow-right" />
+      </div>
       <div class="slider-content">
         <div class="slider-page slider-page__blue">
           <img src="./assets/images/phone2.svg" alt="phone 2" />
@@ -177,5 +180,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
