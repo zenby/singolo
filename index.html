@@ -18,7 +18,7 @@
           <span class="logo-name">SINGOLO</span>
           <span class="logo-asterisk">*</span>
         </h1>
-        <nav>
+        <nav class="header-navigation">
           <a href="#home">HOME</a>
           &#8226;
           <a href="#services">SERVICES</a>
@@ -32,6 +32,26 @@
         <div class="empty"></div>
       </div>
     </header>
+
+    <div class="aside-overlay">
+      <aside>
+        <div class="aside-header">
+          <img id="aside-menu" src="assets/images/menu.svg" alt="menu" />
+          <h2 class="logo">
+            <span class="logo-name">SINGOLO</span>
+            <span class="logo-asterisk">*</span>
+          </h2>
+        </div>
+        <nav class="aside-navigation">
+          <a href="#home">HOME</a>
+          <a href="#services">SERVICES</a>
+          <a href="#portfolio">PORTFOLIO</a>
+          <a href="#about">ABOUT</a>
+          <a href="#contact">CONTACT</a>
+        </nav>
+      </aside>
+    </div>
+
     <section id="slider">
       <span id="home" class="hidden-anchor"></span>
       <div class="slider-controls">
@@ -139,7 +159,7 @@
         <h2>Portfolio</h2>
         <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
         <div class="tags">
-          <span class="tag tag-active">All</span>
+          <span class="tag">All</span>
           <span class="tag">Web Design</span>
           <span class="tag">Graphic Design</span>
           <span class="tag">Artwork</span>
@@ -161,8 +181,9 @@
       </div>
     </section>
 
-    <footer id="contact">
+    <footer>
       <div class="container-content">
+        <span id="contact" class="hidden-anchor"></span>
         <div class="copyright">© Copyright 2021</div>
         <div class="socials">
           <a class="social-icon" href="#" target="_blank">
