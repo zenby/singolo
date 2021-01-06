@@ -6,12 +6,13 @@
     <title>Singolo</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="shortcut icon" href="assets/images/chromatic.png" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" /> -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
   </head>
   <body>
     <header>
       <div class="container-content">
+        <img id="menu" src="assets/images/menu.svg" alt="menu" />
         <h1 class="logo">
           <span class="logo-name">SINGOLO</span>
           <span class="logo-asterisk">*</span>
@@ -27,13 +28,25 @@
           &#8226;
           <a href="#contact">CONTACT</a>
         </nav>
+        <div class="empty"></div>
       </div>
     </header>
     <section id="slider">
       <span id="home" class="hidden-anchor"></span>
+      <img class="arrow arrow-left" src="assets/images/arrow-left.svg" alt="arrow-left" />
+      <img class="arrow arrow-right" src="assets/images/arrow-right.svg" alt="arrow-right" />
       <div class="slider-content">
-        <div class="slider-page">
+        <div class="slider-page slider-page__blue">
+          <img src="./assets/images/phone2.svg" alt="phone 2" />
+        </div>
+        <div class="slider-page slider-page__red">
           <img src="./assets/images/phone1.svg" alt="phone 1" />
+        </div>
+        <div class="slider-page slider-page__blue">
+          <img src="./assets/images/phone1.svg" alt="phone 1" />
+        </div>
+        <div class="slider-page slider-page__red">
+          <img src="./assets/images/phone2.svg" alt="phone 2" />
         </div>
       </div>
     </section>
@@ -145,14 +158,22 @@
       </div>
     </section>
 
-    <footer>
+    <footer id="contact">
       <div class="container-content">
         <div class="copyright">© Copyright 2021</div>
         <div class="socials">
-          <div class="social-icons"><img src="assets/images/facebook.svg" alt="facebook" /></div>
-          <div class="social-icons"><img src="assets/images/google.svg" alt="google" /></div>
-          <div class="social-icons"><img src="assets/images/twitter.svg" alt="twitter" /></div>
-          <div class="social-icons"><img src="assets/images/linkedin.svg" alt="linkedin" /></div>
+          <a class="social-icon" href="#" target="_blank">
+            <img src="assets/images/facebook.svg" alt="facebook" />
+          </a>
+          <a class="social-icon" href="#" target="_blank">
+            <img src="assets/images/google.svg" alt="google" />
+          </a>
+          <a class="social-icon" href="#" target="_blank">
+            <img src="assets/images/twitter.svg" alt="twitter" />
+          </a>
+          <a class="social-icon" href="#" target="_blank">
+            <img src="assets/images/linkedin.svg" alt="linkedin" />
+          </a>
         </div>
       </div>
     </footer>

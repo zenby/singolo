@@ -24,7 +24,7 @@ section {
   color: #767e9e;
 }
 
-span.hidden-anchor[id] {
+.hidden-anchor[id] {
   position: absolute;
   top: -90px;
 }
@@ -60,6 +60,17 @@ footer > *:first-child {
   align-items: center;
 }
 
+#menu {
+  display: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  #menu {
+    display: block;
+  }
+}
+
 .logo {
   display: inline-block;
   font-size: 25px;
@@ -79,14 +90,26 @@ nav {
   color: #fff;
 }
 
+@media only screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+}
+
 nav > a {
   text-decoration: none;
-  padding: 15px;
+  padding: 10px;
   color: #fff;
 }
 
-nav > a:target {
-  color: #f06c64;
+.empty {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  nav + .empty {
+    display: block;
+  }
 }
 
 /* footer */
@@ -100,6 +123,12 @@ footer > *:first-child {
   height: 76px;
 }
 
+@media only screen and (max-width: 768px) {
+  footer > *:first-child {
+    justify-content: center;
+  }
+}
+
 .copyright {
   color: #666d89;
   font-weight: 700;
@@ -107,19 +136,26 @@ footer > *:first-child {
   font-size: 18px;
 }
 
-.socials > .social-icons {
+@media only screen and (max-width: 768px) {
+  .copyright {
+    display: none;
+  }
+}
+
+.socials > .social-icon {
   display: inline-flex;
   border: 1px solid #666d89;
   border-radius: 50%;
   margin: 0 4px;
   cursor: pointer;
+  text-decoration: none;
 }
 
-.socials > .social-icons:hover {
+.socials > .social-icon:hover {
   margin: 0 2px;
 }
 
-.socials > .social-icons:hover > img {
+.socials > .social-icon:hover img {
   margin: 10px;
 }
 
@@ -131,12 +167,54 @@ footer > *:first-child {
 
 /* slider */
 
+#slider {
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.arrow:hover {
+  transform: translateY(-50%) scale(1.2);
+}
+
+.arrow-left {
+  left: 30px;
+}
+
+.arrow-right {
+  right: 30px;
+}
+
 .slider-page {
-  background-color: #f06c64;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 54px;
+  min-width: calc(100vw - 108px);
+  height: 100%;
+}
+
+.slider-page > img {
+  width: 50%;
+  max-height: 500px;
+}
+
+.slider-page__red {
+  background-color: #f06c64;
+}
+
+.slider-page__blue {
+  background-color: #648bf0;
+}
+
+.slider-content {
+  display: flex;
+  /* overflow-x: hidden; */
 }
 
 /* services */
@@ -279,6 +357,10 @@ footer > *:first-child {
 .portfolio-image {
   border-radius: 3px;
   width: 100%;
+}
+
+.portfolio-image:nth-child(n + 13) {
+  display: none;
 }
 
 .portfolio-image:hover {
